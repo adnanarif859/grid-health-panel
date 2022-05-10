@@ -53,3 +53,44 @@ p {
 .bg2 {
   background: url(./bg2.jpg);
 }
+@media screen and (max-width: 640px) {
+  .container > div > h2,
+  p {
+    color: plum;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  .container > div > h2 > span {
+    font-size: 12px;
+  }
+  .container > div {
+    height: 100px;
+  }
+  .container {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 4px;
+  }
+  .container > div:nth-of-type(1) {
+    grid-column: 1 / 5;
+  }
+  .container > div:nth-of-type(3) {
+    grid-column: 2 / 4;
+  }
+  .container > div:nth-of-type(5) {
+    grid-column: 1 / 5;
+  }
+  .container > div:nth-of-type(6) {
+    grid-column: 1 / 4;
+  }
+  .container > div:nth-of-type(9) {
+    grid-column: 2 / 5;
+  }
+  .container > div:nth-of-type(10) {
+    grid-column: 1 / 5;
+  }
+  .container > div:nth-of-type(12) {
+    grid-column: 2 / 5;
+  }
+}
